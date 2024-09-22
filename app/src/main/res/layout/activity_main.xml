@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/hi"
+        android:textColor="#1C1C1C"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/nice_to_meet_you_d"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
+
+    <ImageView
+        android:id="@+id/ivCollapseSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:alpha="0.4"
+        app:layout_constraintEnd_toEndOf="@+id/mainMessage"
+        app:layout_constraintStart_toStartOf="@+id/mainMessage"
+        app:layout_constraintTop_toBottomOf="@+id/mainMessage"
+        app:srcCompat="@drawable/cute_emoji"
+        app:tint="#000" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/bottomContainer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="#00455A"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCollapse"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:alpha="0"
+        android:background="@drawable/cute_emoji"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomContainer"
+        app:layout_constraintStart_toStartOf="@+id/bottomContainer"
+        app:layout_constraintTop_toTopOf="@+id/bottomContainer" />
+
+    <ImageView
+        android:id="@+id/imageEmojiBottom"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomContainer"
+        app:layout_constraintEnd_toEndOf="@+id/bottomContainer"
+        app:layout_constraintStart_toStartOf="@+id/bottomContainer"
+        app:layout_constraintTop_toTopOf="@+id/bottomContainer"
+        app:srcCompat="@drawable/cute_emoji"
+        app:tint="#F5F5F5" />
+
+    <TextView
+        android:id="@+id/collapseTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/don_t_tell_anybody_about_this_just_you_and_me"
+        android:textColor="#A6FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/collapseMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/yeay_you_found_secret"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/collapseTextMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

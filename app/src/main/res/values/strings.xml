@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">pageEmoji</string>
+    <string name="hi">Hi!</string>
+    <string name="nice_to_meet_you_d">Nice to meet you :D</string>
+    <string name="don_t_tell_anybody_about_this_just_you_and_me">Don\'t tell anybody about this. Just you and me</string>
+    <string name="yeay_you_found_secret">Yeay, you found secret!</string>
+</resources>
